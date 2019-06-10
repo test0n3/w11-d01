@@ -62,7 +62,7 @@ header nav ul li a:hover {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #home {
