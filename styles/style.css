@@ -1,25 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: chocolate;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
+
 .container {
   width: 800px;
   margin: 0 auto;
+  position: relative;
 }
 
 .codeable-white {
-  font-family: 'Roboto slab', sans-serif;
+  font-family: "Roboto slab", sans-serif;
   color: #fff;
 }
+
 .codeable-gray {
   color: #999b9e;
-}
-
-.card {
-  
 }
 
 header {
@@ -28,36 +27,44 @@ header {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  width: 100%;
+  width: 800px;
   height: 60px;
   background-color: darkolivegreen;
-  font-family: 'Gugi', sans-serif;
+  font-family: sans-serif;
+  position: fixed;
 }
 
 header h1 {
-  
-  color: darkgray;
+  padding: 0 10px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #aaa;
 }
 
 header nav ul {
   margin: 0;
-  padding: 0;
-  
+  padding: 0 10px;
 }
 
 header nav ul li {
-  display:inline-block;
+  display: inline-block;
   list-style: none;
+  padding: 0 10px;
+  width: 50px;
+  text-align: center;
 }
 
 header nav ul li a {
   text-decoration: none;
   display: block;
-  color: darkgrey;
+  color: #aaa;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
+  font-weight: bold;
   background-color: blueviolet;
 }
 
@@ -70,19 +77,36 @@ section {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
-#home .right {
+#home #left {
   width: 50%;
-  height: 100vh;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#left h2,
+p {
+  padding: 0 20px;
+}
+
+#home #right {
+  width: 50%;
   background-color: cornflowerblue;
 }
 
-#home .left {
-  width: 50%;
-  height: 100vh;
-  background-color: tomato;
-  padding: 0 20px;
+#projects {
+  font-size: 14px;
+  color: #333;
+  /* height: 100vh; */
+}
+
+#projects h2 {
+  margin: 0;
+  padding: 60px 0 0 20px;
 }
 
 #projects ul {
@@ -90,43 +114,54 @@ section {
   flex-flow: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 #projects ul li {
   list-style: none;
 }
+
+#projects ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
 #projects article {
   width: 300px;
   height: 400px;
 }
+
 #projects article h3 {
   font-weight: bold;
   height: 200px;
-  padding:0;
-  margin:0;
-  
-}
-
-#projects {
-  font-size: 14px;
-  color: #333;
+  padding: 0;
+  margin: 0;
 }
 
 #project01 {
   background-image: url(https://placekitten.com/300/200);
   background-repeat: no-repeat;
 }
+
 #project02 {
   background-image: url(https://placekitten.com/300/200);
   background-repeat: no-repeat;
 }
+
 #project03 {
   background-image: url(https://placekitten.com/300/200);
   background-repeat: no-repeat;
 }
+
 #project04 {
   background-image: url(https://placekitten.com/300/200);
-  background-repeat: no-repeat;|
+  background-repeat: no-repeat;
+}
+
+#contact {
+  height: 100vh;
+  padding: 60px 0 0 20px;
 }
 
 footer {
