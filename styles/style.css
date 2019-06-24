@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ body {
 }
 
 .codeable-white {
-  font-family: 'Roboto slab', sans-serif;
+  font-family: "Roboto slab", sans-serif;
   color: #fff;
 }
 
@@ -39,7 +40,7 @@ header h1 {
 
 header h1 a {
   text-decoration: none;
-  color: #AAA;
+  color: #aaa;
 }
 
 header nav ul {
@@ -58,12 +59,17 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   display: block;
-  color: #AAA;
+  color: #aaa;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
   font-weight: bold;
+  background-color: blueviolet;
+}
+
+section {
+  min-height: 100vh;
 }
 
 #home {
@@ -82,7 +88,8 @@ header nav ul li a:hover {
   justify-content: center;
 }
 
-#left h2, p {
+#left h2,
+p {
   padding: 0 20px;
 }
 
